@@ -1,0 +1,27 @@
+[
+  {
+    "iconType": "pt-icon-dashboard",
+    "title": "Dashboard",
+    "href": "/dashboard",
+    "activeRoutes": ["/dashboard"]
+  },
+  {
+    "iconType": "pt-icon-briefcase",
+    "title": "Case Management",
+    "activeRoutes": ["/alerts", "/cases", "/case"],
+    "subMenus": [
+      {
+        "iconType": "py-alerts",
+        "title": "Alerts",
+        "href": "/alerts",
+        "activeRoutes": ["/alerts"]
+      },
+      {
+        "iconType": "pt-icon-inbox",
+        "title": "Cases",
+        "href": "/cases",
+        "activeRoutes": ["/cases", "/case"]
+      }
+    ]
+  }
+]
