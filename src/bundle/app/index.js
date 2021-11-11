@@ -16,7 +16,7 @@ export function App() {
     setTimeout(() => {
       axios
         .get(
-          `${window.location.protocol}://${window.location.host}/mock-data/tabs.json`
+          `${window.location.protocol}//${window.location.host}/mock-data/tabs.json`
         )
         .then((result) => {
           setTabs(result.data);
