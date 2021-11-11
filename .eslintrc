@@ -1,0 +1,15 @@
+{
+  "extends": "react-app",
+  "rules": {
+    "semi": ["error", "always"],
+    "react/jsx-no-undef": "error",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/jsx-no-target-blank": ["error", { "enforceDynamicLinks": "always" }],
+    "react/no-unknown-property": "error",
+    "react/react-in-jsx-scope": "error",
+    "react/self-closing-comp": "error",
+    "no-debugger": "off",
+    "prefer-const": "error"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "henriiik.vscode-sort",
+    "pflannery.vscode-versionlens",
+    "zh9528.file-size"
+  ]
+}
