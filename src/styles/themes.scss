@@ -1,0 +1,91 @@
+// Light theme.
+.lh-theme-light {
+  --lh-color-primary: #d5091b;
+
+  --lh-base-color-text: #0b1928;
+  --lh-base-color-code: 11, 25, 40;
+
+  --lh-surface-color-level-0: #fff;
+  --lh-surface-color-level-1: #f6f7f8;
+  --lh-surface-color-level-2: #f0f1f2;
+  --lh-surface-color-level-3: #e6e7e8;
+  --lh-surface-color-level-4: #484b52;
+
+  // Informational colors
+  --lh-color-error-900: #b32a25;
+  --lh-color-error-500: #c23934;
+  --lh-color-error-100: #ffdede;
+
+  --lh-color-warning-900: #994f00;
+  --lh-color-warning-500: #faad14;
+  --lh-color-warning-100: #feecc7;
+
+  --lh-color-success-900: #04844b;
+  --lh-color-success-500: #50c574;
+  --lh-color-success-100: #d7f2e3;
+
+  --lh-color-link-900: #0980d5;
+  --lh-color-link-500: #4a90e2;
+  --lh-color-link-100: #d9eeff;
+
+  --lh-icon-color: #774fcf;
+
+  // Effects
+  --lh-drop-shadow-level-1: 0 1px 4px rgba(0, 0, 0, 0.14);
+  --lh-drop-shadow-level-1-up: 0 -1px 4px rgba(0, 0, 0, 0.14);
+  --lh-drop-shadow-level-2: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --lh-drop-shadow-level-2-with-outline: 0 3px 8px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+  --lh-drop-shadow-level-3: 0 12px 12px rgba(0, 0, 0, 0.06);
+  --lh-drop-shadow-level-3-with-outline: 0 10px 12px rgba(0, 0, 0, 0.06),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+  --lh-drop-shadow-level-3-up: 0 -12px 12px rgba(0, 0, 0, 0.06);
+  --lh-drop-shadow-level-4: 0 24px 50px rgba(0, 0, 0, 0.04);
+  --lh-drop-shadow-card: 0 16px 20px rgba(0, 0, 0, 0.03);
+}
+
+// Dark theme.
+.lh-theme-dark {
+  --lh-color-primary: #fc868c;
+
+  --lh-base-color-text: #fff;
+  --lh-base-color-code: 255, 255, 255;
+
+  --lh-surface-color-level-0: #1d2024;
+  --lh-surface-color-level-1: #17191c;
+  --lh-surface-color-level-2: #101214;
+  --lh-surface-color-level-3: #070809;
+  --lh-surface-color-level-4: #fff;
+
+  // Informational colors
+  --lh-color-error-900: #ffdede;
+  --lh-color-error-500: #c23934;
+  --lh-color-error-100: #b32a25;
+
+  --lh-color-warning-900: #feecc7;
+  --lh-color-warning-500: #faad14;
+  --lh-color-warning-100: #994f00;
+
+  --lh-color-success-900: #d7f2e3;
+  --lh-color-success-500: #50c574;
+  --lh-color-success-100: #04844b;
+
+  --lh-color-link-900: #d9eeff;
+  --lh-color-link-500: #4a90e2;
+  --lh-color-link-100: #0980d5;
+
+  --lh-icon-color: #774fcf;
+
+  // Effects
+  --lh-drop-shadow-level-1: 0 1px 4px rgba(0, 0, 0, 0.44);
+  --lh-drop-shadow-level-1-up: 0 -1px 4px rgba(0, 0, 0, 0.44);
+  --lh-drop-shadow-level-2: 0 4px 8px rgba(0, 0, 0, 0.35);
+  --lh-drop-shadow-level-2-with-outline: 0 3px 8px rgba(0, 0, 0, 0.35),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.18);
+  --lh-drop-shadow-level-3: 0 12px 12px rgba(0, 0, 0, 0.3);
+  --lh-drop-shadow-level-3-with-outline: 0 10px 12px rgba(0, 0, 0, 0.3),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.18);
+  --lh-drop-shadow-level-3-up: 0 -12px 12px rgba(0, 0, 0, 0.3);
+  --lh-drop-shadow-level-4: 0 24px 50px rgba(0, 0, 0, 0.26);
+  --lh-drop-shadow-card: 0 16px 20px rgba(0, 0, 0, 0.03);
+}
