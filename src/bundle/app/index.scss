@@ -3,29 +3,20 @@
   height: 100%;
   width: 100%;
 
-  &-left {
+  &-nav {
     background-color: black;
-    color: white;
     height: 100%;
-    width: 50%;
-    resize: horizontal;
-    overflow: auto;
+    width: 210px;
   }
 
-  &-right {
+  &-resizer {
+    background-color: #888888;
+    cursor: col-resize;
+  }
+
+  &-view {
     background-color: grey;
     height: 100%;
-    width: 50%;
-  }
-}
-
-.fill-items {
-  display: flex;
-
-  &-item {
-    padding: 8px;
-    margin: 8px;
-    border: 1px solid grey;
-    white-space: nowrap;
+    width: calc(100% - 210px);
   }
 }

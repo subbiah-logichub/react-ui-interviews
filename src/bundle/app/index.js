@@ -1,36 +1,42 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+
+import axios from "axios";
+import { Container, Section, Bar } from "react-simple-resizer";
+
+import { Tabs } from "../../components/tabs";
 
 import "./index.scss";
 
-const options = [
-  { name: "playbook" },
-  { name: "dashboard" },
-  { name: "alerts" },
-  { name: "case-types" },
-  { name: "analytics" },
-  { name: "assistant" },
-  { name: "modules" },
-  { name: "settings" },
-  { name: "cases" },
-  { name: "streams" },
-  { name: "baselines" },
-];
-
 export function App() {
+  const [tabs, setTabs] = useState([]);
+  const [isTabsLoading, setIsTabsLoading] = useState(true);
+  const [isTabsError, setIsTabsError] = useState("");
+
+  useEffect(() => {
+    setTimeout(() => {
+      axios
+        .get(`http://${window.location.host}/mock-data/tabs.json`)
+        .then((result) => {
+          setTabs(result.data);
+        })
+        .catch((error) => {
+          setIsTabsError(error.message);
+        })
+        .finally(() => {
+          setIsTabsLoading(false);
+        });
+    }, 2000);
+  }, []);
+
   return (
-    <div className="app">
-      <div className="app-left">
-        <div className="fill-items">
-          {options.map(({ name }, index) => {
-            return (
-              <div key={index} className="fill-items-item">
-                {name}
-              </div>
-            );
-          })}
-        </div>
-      </div>
-      <div className="app-right" />
-    </div>
+    <Container className="app">
+      <Section className="app-nav" minSize={40} defaultSize={210} />
+      <Bar size={10} className="app-resizer" />
+      <Section className="app-view" minSize={100}>
+        {isTabsLoading && "loading..."}
+        {isTabsError && !isTabsLoading && isTabsError}
+        {!isTabsError && !isTabsLoading && <Tabs tabs={tabs} />}
+      </Section>
+    </Container>
   );
 }

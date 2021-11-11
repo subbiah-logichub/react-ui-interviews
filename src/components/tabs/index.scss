@@ -1,0 +1,10 @@
+.tabs {
+  display: flex;
+
+  &-tab {
+    padding: 8px;
+    margin: 8px;
+    border: 1px solid black;
+    white-space: nowrap;
+  }
+}
