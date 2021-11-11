@@ -15,7 +15,9 @@ export function App() {
   useEffect(() => {
     setTimeout(() => {
       axios
-        .get(`http://${window.location.host}/mock-data/tabs.json`)
+        .get(
+          `${window.location.protocol}://${window.location.host}/mock-data/tabs.json`
+        )
         .then((result) => {
           setTabs(result.data);
         })
